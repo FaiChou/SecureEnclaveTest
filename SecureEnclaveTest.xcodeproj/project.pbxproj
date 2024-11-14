@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4D6EA8C12CE4C52E00906968 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6EA8C02CE4C52E00906968 /* Security.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		4D6EA8AC2CE4C3B200906968 /* SecureEnclaveTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureEnclaveTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D6EA8C02CE4C52E00906968 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D6EA8C12CE4C52E00906968 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +39,7 @@
 			isa = PBXGroup;
 			children = (
 				4D6EA8AE2CE4C3B200906968 /* SecureEnclaveTest */,
+				4D6EA8BF2CE4C52E00906968 /* Frameworks */,
 				4D6EA8AD2CE4C3B200906968 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +50,14 @@
 				4D6EA8AC2CE4C3B200906968 /* SecureEnclaveTest.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4D6EA8BF2CE4C52E00906968 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D6EA8C02CE4C52E00906968 /* Security.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +270,7 @@
 				DEVELOPMENT_TEAM = 7WS42S6435;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "use face id to encrypt";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +300,7 @@
 				DEVELOPMENT_TEAM = 7WS42S6435;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "use face id to encrypt";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
